@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Navbar.module.css";
+import "./navbar.css"
 
 const Navbar = () => {
   return <header>Color guessing game</header>;
