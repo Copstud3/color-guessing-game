@@ -1,0 +1,115 @@
+section {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: beige;
+  font-family: 'Inter';
+  height: calc(100vh - 61px);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Target color box */
+  .color-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Correct guess animation */
+  .correct-animation {
+    transform: scale(1.1);
+  }
+  
+  /* Game instructions */
+  .game-instructions {
+    font-size: 20px;
+  }
+  
+  /* Game status */
+  .game-status {
+    font-size: 20px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: green;
+    background-color: lightgreen;
+  }
+  
+  /* Color buttons */
+  .color-options {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .color-button {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.3s;
+  }
+  
+  .color-button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  /* Score */
+  .score {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  /* New Game Button */
+  .new-game-btn {
+    padding: 15px 80px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #D17A22;
+    font-family: 'Inter';
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .new-game-btn:hover {
+    background-color: #ab5b0a;
+  }
+
+  .endnote, a{
+    font-size: 16px;
+    margin-top: 50px;
+    text-decoration: none;
+  }
+
+  a, a:hover{
+    color: lightblue;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .color-options {
+      grid-template-columns: repeat(3, 80px);
+    }
+    .new-game-btn:hover{
+      background-color: #D17A22;
+    }
+    .score, .game-status{
+      font-size: 16px;
+    }
+  }
