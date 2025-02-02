@@ -50,20 +50,20 @@ const Gamebox = () => {
 
       setTimeout(() => {
         startNewGame();
-      }, 1000);
+      }, 1500);
     } else {
       setMessage("Wrong! Try again. ❌");
 
       setTimeout(() => {
         startNewGame();
-      }, 1000);
+      }, 1500);
       setIsWaiting(true);
     }
 
     // Set waiting state to true
     setTimeout(() => {
       setIsWaiting(false);
-    }, 1000);
+    }, 1500);
   };
 
   return (
