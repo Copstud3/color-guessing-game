@@ -1,7 +1,6 @@
-import './index.css'
-import Navbar from './components/Navbar'
-import Gamebox from './components/Gamebox'
-
+import "./index.css";
+import Navbar from "./components/Navbar";
+import Gamebox from "./components/Gamebox";
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       <Navbar />
       <Gamebox />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

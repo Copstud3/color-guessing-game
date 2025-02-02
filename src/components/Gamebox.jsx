@@ -12,7 +12,6 @@ const Gamebox = () => {
   const [message, setMessage] = useState("Choose from the color options"); // This is the message to be displayed
   const [shuffledColors, setShuffledColors] = useState(colors); // State for shuffled colors
 
-
   useEffect(() => {
     startNewGame();
   }, []); // This state chooses a random color whe the game starts
@@ -27,7 +26,8 @@ const Gamebox = () => {
   };
 
   const startNewGame = () => {
-    const randomColor = shuffledColors[Math.floor(Math.random() * shuffledColors.length)];
+    const randomColor =
+      shuffledColors[Math.floor(Math.random() * shuffledColors.length)];
     setTargetColor(randomColor);
     setShuffledColors(shuffleColors()); // Shuffle colors for the next round
     setMessage("Choose from the color options");
@@ -51,7 +51,6 @@ const Gamebox = () => {
       setTimeout(() => {
         startNewGame();
       }, 1000);
-      
     } else {
       setMessage("Wrong! Try again. ❌");
 
@@ -111,7 +110,10 @@ const Gamebox = () => {
       >
         New Game
       </button>
-      <p className="endnote">Developed by <a href="http://chris-is-a-dev.vercel.app">Copstud3</a> - HNG 12 2025</p>
+      <p className="endnote">
+        Developed by <a href="http://chris-is-a-dev.vercel.app">Copstud3</a> -
+        HNG 12 2025
+      </p>
     </section>
   );
 };
